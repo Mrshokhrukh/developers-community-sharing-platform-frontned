@@ -10,7 +10,6 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "DevTalk - Developer Chat",
   description: "A developer-themed chat application",
-  generator: "v0.app",
   icons: {
     icon: [
       {
