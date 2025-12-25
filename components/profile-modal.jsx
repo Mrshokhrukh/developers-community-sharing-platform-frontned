@@ -33,6 +33,7 @@ export default function ProfileModal({ isOpen, onClose }: ProfileModalProps) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
       <div className="w-full max-w-2xl rounded-xl border border-border bg-card shadow-2xl">
+        {/* Header */}
         <div className="flex items-center justify-between border-b border-border p-6">
           <h2 className="font-mono text-2xl font-bold text-foreground">User Profile</h2>
           <button onClick={onClose} className="rounded-lg p-2 transition-colors hover:bg-secondary">
@@ -40,7 +41,9 @@ export default function ProfileModal({ isOpen, onClose }: ProfileModalProps) {
           </button>
         </div>
 
+        {/* Profile Content */}
         <div className="p-6">
+          {/* Avatar & Basic Info */}
           <div className="flex items-start gap-6 border-b border-border pb-6">
             <div className="relative">
               <div className="flex h-24 w-24 items-center justify-center rounded-full bg-primary font-mono text-3xl font-bold text-primary-foreground">
@@ -127,6 +130,7 @@ export default function ProfileModal({ isOpen, onClose }: ProfileModalProps) {
             </div>
           </div>
 
+          {/* Social Links */}
           <div className="py-6">
             <h4 className="mb-4 font-mono text-sm font-semibold text-muted-foreground">Social Links</h4>
             <div className="grid gap-3">

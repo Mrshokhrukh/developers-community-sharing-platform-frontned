@@ -1,7 +1,7 @@
 "use client"
 
 import { format } from "date-fns"
-import type { Message } from "../types/chats"
+import { Message } from "../types/chats"
 import Image from "next/image"
 
 interface ChatMessagesProps {

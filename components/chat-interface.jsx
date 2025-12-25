@@ -5,7 +5,7 @@ import Sidebar from "./sidebar"
 import ChatHeader from "./chat-header"
 import ChatMessages from "./chat-messages"
 import ChatInput from "./chat-input"
-import type { Message, Contact } from "../types/chats"
+import { Message, Contact } from "../types/chats"
 
 export default function ChatInterface() {
   const [messages, setMessages] = useState<Message[]>([
