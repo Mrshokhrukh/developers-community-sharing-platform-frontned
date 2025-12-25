@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -39,7 +38,6 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
-/* Customized dark theme colors for DevTalk */
 .dark {
   --background: oklch(0.12 0 0);
   --foreground: oklch(0.98 0 0);

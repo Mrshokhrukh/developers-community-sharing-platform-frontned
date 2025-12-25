@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DevTalk
+
+A modern developer-themed chat application built with Next.js 16, React 19, and TypeScript.
+
+## Features
+
+- 💬 Real-time chat interface
+- 🎨 Developer-themed dark UI with purple accents
+- 📱 Responsive design
+- 🔔 Message notifications with unread indicators
+- 📷 Image sharing support
+- 👥 Contact management
+- ⌨️ Monospace font for developer aesthetic
+- 🎯 Code-style UI elements (JSX-like syntax)
+
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS v4
+- **UI Components:** Radix UI primitives
+- **Icons:** Lucide React
+- **Date Formatting:** date-fns
+- **Font:** Geist & Geist Mono
 
 ## Getting Started
 
-First, run the development server:
-
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+```
+devtalk/
+├── app/
+│   ├── layout.tsx          # Root layout with metadata
+│   ├── page.tsx            # Home page
+│   └── globals.css         # Global styles with dark theme
+├── components/
+│   ├── chat-interface.tsx  # Main chat component with state
+│   ├── sidebar.tsx         # Contacts sidebar with search
+│   ├── chat-header.tsx     # Chat header with call actions
+│   ├── chat-messages.tsx   # Messages display with images
+│   ├── chat-input.tsx      # Message input with attachments
+│   └── ui/
+│       └── button.tsx      # Reusable button component
+├── types/
+│   └── chat.ts            # TypeScript interfaces
+├── next.config.ts         # Next.js configuration
+└── package.json
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Features Explained
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Developer Theme
+- Code-style syntax (JSX imports, function-like placeholders)
+- Monospace fonts throughout
+- Dark mode with purple/blue accent colors
+- Console-style session indicators
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Chat Functionality
+- Send and receive messages
+- Display timestamps
+- Share images
+- Online status indicators
+- Unread message badges
+- Search contacts
 
-## Deploy on Vercel
+### Responsive Design
+- Mobile-first approach
+- Flexible layouts with Flexbox
+- Overflow handling for long messages
+- Smooth transitions and hover effects
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Customization
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Colors
+Edit the CSS variables in `app/globals.css` under the `.dark` class to customize the theme colors.
+
+### Contacts
+Modify the `contacts` array in `components/sidebar.tsx` to add or remove contacts.
+
+### Messages
+Update the initial `messages` state in `components/chat-interface.tsx` to customize default messages.
+
+## License
+
+MIT
