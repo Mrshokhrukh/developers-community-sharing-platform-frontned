@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { X, Mail, Github, Linkedin, Twitter, Globe, Edit2, Save } from "lucide-react"
-import { Button } from "./ui/button"
+import { Button } from "@/components/ui/button"
 
 interface ProfileModalProps {
   isOpen: boolean
